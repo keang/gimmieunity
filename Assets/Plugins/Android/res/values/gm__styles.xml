@@ -1,0 +1,83 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Page Theme -->
+    <style name="RewardCategoryPage" parent="@style/Theme.Sherlock.Light">
+        <item name="actionBarStyle">@style/GimmieActionBar</item>
+        <item name="android:actionBarStyle">@style/GimmieActionBar</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.Gimmie.TabPageIndicator.Catalog</item>
+    </style>
+
+    <style name="GimmieAppeaerance" parent="@style/Theme.Sherlock.Light">
+        <item name="android:actionBarStyle">@style/GimmieActionBar</item>
+        <item name="actionBarStyle">@style/GimmieActionBar</item>
+    </style>
+
+    <!-- Components -->
+    <style name="Widget.Gimmie.Button.Reward" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/gm__rewards_button</item>
+        <item name="android:textColor">@color/gm__reward_button_text</item>
+    </style>
+
+    <!-- Action Bar -->
+    <style name="GimmieActionBar" parent="@style/Widget.Sherlock.ActionBar">
+        <item name="android:background">@color/gm__action_bar_background</item>
+        <item name="android:titleTextStyle">@style/GimmieActionBarTitle</item>
+    </style>
+
+    <style name="GimmieActionBarTitle" parent="@style/TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="RewardCategoryGridViewAppearance" parent="Widget">
+        <item name="android:background">@color/gm__background</item>
+    </style>
+    <!-- /Action Bar -->
+
+    <style name="Widget.Gimmie.TabPageIndicator.Catalog" parent="Widget.TabPageIndicator">
+        <item name="android:textAppearance">@style/TextAppearance.Gimmie.TabPageIndicator</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:background">@drawable/gm__tab_indicator</item>
+    </style>
+
+    <style name="TextAppearance.Gimmie.TabPageIndicator" parent="Widget">
+        <item name="android:textColor">@color/gm__reward_category_menu</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.Gimmie.History.Row" parent="Widget">
+        <item name="android:background">@color/gm__history_row_background</item>
+    </style>
+
+    <style name="Widget.Gimmie.TextView.ActionMenu.Title" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/gm__action_bar_text</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="Widget.Gimmie.TextView.ActionMenu.Dropdown.Text" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/gm__action_bar_text</item>
+        <item name="android:background">@color/gm__action_bar_background</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="Widget.Gimmie.ProgressBar.Horizontal" parent="@style/Widget.Sherlock.ProgressBar.Horizontal">
+        <item name="android:minHeight">5dip</item>
+        <item name="android:maxHeight">5dip</item>
+    </style>
+
+    <style name="Animation.Gimmie.Notification" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="Widget.Gimmie.GridView.Leaderboard" parent="@android:style/Widget.GridView">
+        <item name="android:background">@color/gm__leaderboard_background</item>
+    </style>
+
+</resources>

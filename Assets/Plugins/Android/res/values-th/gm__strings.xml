@@ -1,0 +1,125 @@
+<resources>
+
+    <string name="gm__app_name">Gimmie</string>
+
+    <string name="gm__reward_category_menu">รางวัล</string>
+    <string name="gm__profile_menu">ข้อมูลส่วนตัว</string>
+    <string name="gm__history_menu">เหตุการณ์ที่เคยทำ</string>
+    <string name="gm__leaderboard_menu">ตารางผู้นำ</string>
+    
+    <string name="gm__loading">กำลังโหลด</string>
+
+    <string name="gm__ok">เข้าใจแล้ว</string>
+    <string name="gm__confirm">ยืนยัน</string>
+    <string name="gm__cancel">ยกเลิก</string>
+    
+    <string name="gm__toggle_button">ปุ่มเปิดปิด</string>
+    
+    <string name="gm__unit">pt</string>
+    <string name="gm__unit_plural">pts</string>
+    <string name="gm__unit_full">point</string>
+    <string name="gm__unit_full_plural">points</string>
+    
+    <!-- Error page -->
+    <string name="gm__empty_claims_head">คุณยังไม่เคยแลกรางวัลอะไร</string>
+    <string name="gm__empty_claims_sub">เริ่มสะสมรางวัลง่ายๆ จากการแชร์</string>
+    <string name="gm__empty_claims_image">ภาพไม่มีรางวัล</string>
+    
+    <string name="gm__empty_history_head">ยังไม่มีเหตุการณ์ในระบบ</string>
+    <string name="gm__empty_history_sub">เริ่มสะสมรางวัลง่ายๆ จากการแชร์</string>
+    <string name="gm__empty_history_image">ภาพไม่มีเหตุการณ์</string>
+    
+    <string name="gm__nodata_image">ภาพไม่มีการเชื่อมต่อ</string>
+    <string name="gm__nodata_head">ไม่มีการเชื่อมต่อ</string>
+    <string name="gm__nodata_detail">กรุณาตรวจสอบการเชื่อมต่อ</string>
+    
+    <string name="gm__somethingwrong_image">ภาพบางอย่างผิดพลาด</string>
+    <string name="gm__somethingwrong_detail">บางอย่างผิดพลาด โปรดลองใหม่อีกครั้ง</string>
+    
+    <string name="gm__refresh">ลองใหม่</string>
+    
+    <!-- Reward catalog page -->
+    <string name="gm__user_points_info">คุณมีแต้มทั้งหมด {pts}</string>
+    <string name="gm__reward_fully_redeemed">รางวัลนี้ถูกแลกหมดแล้ว</string>
+    
+    <string name="gm__reward_sponsor_header">อยากแสดงสินค้าตรงนี้</string>
+    <string name="gm__reward_sponsor_subheader">กดเข้ามาดูรายละเอียดได้ที่เว็บของเรา</string>
+    
+    <string name="gm__reward_featured_badge_description">ป้ายรางวัลพิเศษ</string>
+    
+    <!-- Reward Detail page -->
+    <string name="gm__reward_image">ภาพรางวัล</string>
+    <string name="gm__reward_description_title">รายละเอียด</string>
+    <string name="gm__reward_fineprint_title">ข้อตกลง</string>
+    <string name="gm__reward_redeem_confirm">ยืนยันการแลกรางวัล (ได้อ่านข้อตกลงก่อนแลกแล้ว?)</string>
+    <string name="gm__reward_redeem_button">แลกรางวัลด้วย {pts} แต้ม</string>
+    <string name="gm__reward_redeem_button_landscape">แลกรางวัลด้วย {pts} แต้ม</string>
+    <string name="gm__reward_user_points">คุณมีแต้มอยู่ {pts} แต้ม!</string>
+    <string name="gm__reward_detail_title">รายละเอียดรางวัล</string>
+    
+    <!-- History page -->
+    <string name="gm__history_list_title">เหตุการณ์ทั้งหมด</string>
+    <string name="gm__history_next_page">หน้าถัดไป</string>
+    <string name="gm__history_point_type">ประเภทแต้ม</string>
+    
+    <!-- Badge page -->
+    <string name="gm__badge_page_title">เครื่องหมาย</string>
+    <string name="gm__badge_header">เครื่องหมาย</string>
+    <string name="gm__badge_mayorships_header">เมเยอร์ชิพ</string>
+    
+    <!-- Profile page -->
+    <string name="gm__profile_points">แต้ม</string>
+    <string name="gm__profile_badges">เครื่องหมาย</string>
+    <string name="gm__profile_rewards">ของรางวัลที่แลกมาแล้ว</string>
+    <string name="gm__profile_activity">เหตุการณ์ทั้งหมด</string>
+    <string name="gm__profile_counter_loading">0</string>
+    <string name="gm__profile_navigation">หน้าถัดไป</string>
+    <string name="gm__profile_next_level_points">{progress} แต้มเพื่อไประดับ {next_level}</string>
+    <string name="gm__profile_reached_highest_level">คุณอยู่ระดับสูงสุดแล้ว</string>
+    
+    <string name="gm__claims_list_title">ของรางวัลของคุณ</string>
+    
+    <!-- Claim page -->
+    <string name="gm__claim_item_navigation">ดูรางวัลของคุณ</string>
+    
+    <!-- Leaderboard page -->
+    <string name="gm__leaderboard_most_points">แต้มสูงสุด</string>
+    <string name="gm__leaderboard_most_rewards">แลกของรางวัลมากสุด</string>
+    <string name="gm__leaderboard_most_value">แลกของรางวัลมูลค่าสูงสุด</string>
+    
+    <string name="gm__leaderboard_first_three_player">ภาพไอคอนผู้เล่นคะแนนสูงสุดสามอันดับแรก</string>
+    <string name="gm__leaderboard_poitns">{points} แต้ม</string>
+    <string name="gm__leaderboard_rewards">{points}</string>
+    <string name="gm__leaderboard_values">{points}</string>
+    
+    <!-- Browser -->
+    <string name="gm__browser_back">กลับ</string>
+    <string name="gm__browser_forward">ไปข้างหน้า</string>
+    <string name="gm__browser_share">แบ่งปัน</string>
+    
+    <!-- Notification -->
+    <string name="gm__notification_points_image">ภาพแต้ม</string>
+    <string name="gm__notification_navigation">ดูรายละเอียดของการแจ้งเตือนนี้</string>
+    <string name="gm__notification_close">ปิด X</string>
+    
+    <string name="gm__notification_instant_win_headline">ยินดีด้วย</string>
+    <string name="gm__notification_instant_win_headline_subtitle">คุณได้รับรางวัลพิเศษ!</string>
+    <string name="gm__notification_instant_win_claim_button">ยืนยันการรับรางวัล</string>
+    <string name="gm__notification_instant_win_note"><![CDATA[รางวัลนี้ถูกเพิ่มในรายการ <font color="#0096d6"><b>ของรางวัลของคุณแล้ว</b></font>]]></string>
+    
+    <string name="gm__notification_badge_headline">ยินดีด้วย</string>
+    <string name="gm__notification_badge_subline"><![CDATA[คุณได้รับโล่ {name}!]]></string>
+    <string name="gm__notification_badge_landscape_subline">คุณได้รับโล่ใหม่!</string>
+    <string name="gm__notification_badge_landscape_name">โล่ {name}</string>
+    
+    <string name="gm__notification_mayorship_subline">คุณได้เป็นเจ้าถื่นแล้ว!</string>
+    <string name="gm__notification_mayorship_name">คุณได้เป็นเจ้าถิ่นที่ {name}</string>
+    
+    <string name="gm__notification_featured_reward_title">รางวัลพิเศษ</string>
+    <string name="gm__notification_featured_reward">{reward_name} ที่ {reward_store}</string>
+    <string name="gm__notification_featured_reward_redeem">แลกรางวัล</string>
+    
+    <!-- Error messages -->
+    <string name="gm_error_409.5.6">คุณได้แลกของรางวัลนี้แล้ว เปิดหน้าของรางวัลของคุณเพื่อใช้สิทธิ</string>
+
+</resources>

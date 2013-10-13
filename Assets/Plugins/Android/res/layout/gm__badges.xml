@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gm__background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/mayorships"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/mayorshipBoxTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gm__badge_header"
+                android:padding="10dp"
+                android:text="@string/gm__badge_mayorships_header"
+                android:textColor="@color/gm__badge_header_text" />
+
+            <com.gimmie.components.ExpandableHeightGridView
+                android:id="@+id/mayorshipsGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mayorshipBoxTitle"
+                android:background="@color/gm__badge_grid_background"
+                android:columnWidth="60dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:isScrollContainer="false"
+                android:numColumns="auto_fit"
+                android:padding="10dp"
+                android:verticalSpacing="10dp" >
+            </com.gimmie.components.ExpandableHeightGridView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/badgesBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/badgeBoxTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gm__badge_header"
+                android:padding="10dp"
+                android:text="@string/gm__badge_header"
+                android:textColor="@color/gm__badge_header_text" />
+
+            <com.gimmie.components.ExpandableHeightGridView
+                android:id="@+id/badgeGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/badgeBoxTitle"
+                android:background="@color/gm__badge_grid_background"
+                android:columnWidth="60dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:isScrollContainer="false"
+                android:numColumns="auto_fit"
+                android:padding="10dp"
+                android:verticalSpacing="10dp" >
+            </com.gimmie.components.ExpandableHeightGridView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

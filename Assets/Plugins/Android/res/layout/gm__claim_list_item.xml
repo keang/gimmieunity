@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rewardItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <com.gimmie.components.SquareImageView
+        android:id="@+id/rewardImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter" />
+
+    <RelativeLayout
+        android:id="@+id/imageLoadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/rewardImage"
+        android:layout_alignLeft="@id/rewardImage"
+        android:layout_alignRight="@+id/rewardImage"
+        android:layout_alignTop="@+id/rewardImage"
+        android:background="@color/gm__loading_background" >
+
+        <ProgressBar
+            android:id="@+id/imageLoadingProgress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/rewardImage"
+        android:layout_toRightOf="@+id/rewardImage"
+        android:background="@color/gm__claim_detail_background"
+        android:padding="6dp" >
+
+        <TextView
+            android:id="@+id/rewardName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/claimNavigationImage"
+            android:text="@string/gm__loading"
+            android:textColor="@color/gm__claim_detail_reward_name"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/expiresDate"
+            android:layout_alignLeft="@+id/rewardName"
+            android:layout_below="@id/rewardName"
+            android:layout_toLeftOf="@+id/claimNavigationImage"
+            android:text="@string/gm__loading"
+            android:textColor="@color/gm__claim_detail_shop_name"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/expiresDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/redeemedDate"
+            android:layout_alignLeft="@+id/shopName"
+            android:layout_alignRight="@+id/claimNavigationImage"
+            android:layout_marginTop="6dp"
+            android:text="@string/gm__loading"
+            android:textColor="@color/gm__claim_detail_expired"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/redeemedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/expiresDate"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/expiresDate"
+            android:text="@string/gm__loading"
+            android:textColor="@color/gm__claim_detail_redeemed"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/claimNavigationImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/gm__claim_item_navigation"
+            android:src="@drawable/gm__navigation_next" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/expiredOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/rewardImage"
+        android:background="@color/gm__claim_detail_overlay"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/expiredDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="126dp"
+            android:text="@string/gm__loading"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

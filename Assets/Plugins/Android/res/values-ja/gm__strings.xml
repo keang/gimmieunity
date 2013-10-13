@@ -1,0 +1,124 @@
+<resources>
+
+    <string name="gm__app_name">Gimmie</string>
+
+    <string name="gm__reward_category_menu">リワード</string>
+    <string name="gm__profile_menu">プロフィール</string>
+    <string name="gm__history_menu">アクティビティ</string>
+    <string name="gm__leaderboard_menu">リーダーボード</string>
+    
+    <string name="gm__loading">ローディング</string>
+
+    <string name="gm__ok">OK got it</string>
+    <string name="gm__confirm">確認</string>
+    <string name="gm__cancel">キャンセル</string>
+    
+    <string name="gm__toggle_button">切替ボタン</string>
+    
+    <string name="gm__unit">pt</string>
+    <string name="gm__unit_plural">pts</string>
+    <string name="gm__unit_full">point</string>
+    <string name="gm__unit_full_plural">points</string>
+    
+    <!-- Error page -->
+    <string name="gm__empty_claims_head">リワードはありません</string>
+    <string name="gm__empty_claims_sub">簡単にポイント獲得できます。フェイスブックで共有しよう！</string>
+    <string name="gm__empty_claims_image">請求なしの画像を表示</string>
+    
+    <string name="gm__empty_history_head">アクティビティはまだありません。</string>
+    <string name="gm__empty_history_sub">簡単にポイント獲得できます。フェイスブックで共有しよう！</string>
+    <string name="gm__empty_history_image">履歴なしの画像を表示</string>
+    
+    <string name="gm__nodata_image">データなしの画像</string>
+    <string name="gm__nodata_head">データコネクションがありません</string>
+    <string name="gm__nodata_detail">データコネクションを確認してください</string>
+    
+    <string name="gm__somethingwrong_image">何かがおかしい場合の画像</string>
+    <string name="gm__somethingwrong_detail">おっと！何かがおかしいようです。後ほどお試し下さい。</string>
+    
+    <string name="gm__refresh">リフレッシュ</string>
+    
+    <!-- Reward catalog page -->
+    <string name="gm__user_points_info">使用可能なポイントが {pts} あります。</string>
+    <string name="gm__reward_fully_redeemed">すべて換えられています。</string>
+    
+    <string name="gm__reward_sponsor_header">リワードを表示しますか？</string>
+    <string name="gm__reward_sponsor_subheader">クリックして詳細を表示</string>
+    
+    <string name="gm__reward_featured_badge_description">特集バッジ</string>
+    
+    <!-- Reward Detail page -->
+    <string name="gm__reward_image">リワード画像</string>
+    <string name="gm__reward_description_title">説明</string>
+    <string name="gm__reward_fineprint_title">契約事項</string>
+    <string name="gm__reward_redeem_confirm">このリワードを獲得しますか？契約事項を確認してください。</string>
+    <string name="gm__reward_redeem_button">{pts} ポイントを消費</string>
+    <string name="gm__reward_redeem_button_landscape">{pts} ポイントを消費</string>
+    <string name="gm__reward_user_points">あなたは {pts} ポイント持っています</string>
+    <string name="gm__reward_detail_title">リワード詳細</string>
+    
+    <!-- History page -->
+    <string name="gm__history_list_title">アクティビティ</string>
+    <string name="gm__history_next_page">次のページ</string>
+    <string name="gm__history_point_type">ポイントの種類</string>
+    
+    <!-- Badge page -->
+    <string name="gm__badge_page_title">バッジ</string>
+    <string name="gm__badge_header">バッジ</string>
+    <string name="gm__badge_mayorships_header">市長</string>
+    
+    <!-- Profile page -->
+    <string name="gm__profile_points">ポイント</string>
+    <string name="gm__profile_badges">バッジ</string>
+    <string name="gm__profile_rewards">変換</string>
+    <string name="gm__profile_activity">アクティビティ</string>
+    <string name="gm__profile_counter_loading">0</string>
+    <string name="gm__profile_navigation">次のページ</string>
+    <string name="gm__profile_next_level_points">{progress} ポイント獲得まであと {next_level} レベルです。</string>
+    <string name="gm__profile_reached_highest_level">Reached highest level</string>
+    
+    <string name="gm__claims_list_title">あなたのリワード</string>
+    
+    <!-- Claim page -->
+    <string name="gm__claim_item_navigation">View claim item</string>
+    
+    <!-- Leaderboard page -->
+    <string name="gm__leaderboard_first_three_player">First three player icon</string>
+    <string name="gm__leaderboard_most_points">一番多くのポイント獲得</string>
+    <string name="gm__leaderboard_most_rewards">一番多くのリワード獲得</string>
+    <string name="gm__leaderboard_most_value">一番高額なリワード獲得</string>
+    
+    <string name="gm__leaderboard_poitns">{points} ポイント</string>
+    <string name="gm__leaderboard_rewards">{points}</string>
+    <string name="gm__leaderboard_values">{points}</string>
+    
+    <!-- Browser -->
+    <string name="gm__browser_back">戻るボタン</string>
+    <string name="gm__browser_forward">戻るボタン</string>
+    <string name="gm__browser_share">共有ボタン</string>
+    
+    <!-- Notification -->
+    <string name="gm__notification_points_image">ポイント画像</string>
+    <string name="gm__notification_navigation">お知らせナビゲーション</string>
+    <string name="gm__notification_close">Xを閉じる</string>
+    
+    <string name="gm__notification_instant_win_headline">おめでとうございます</string>
+    <string name="gm__notification_instant_win_headline_subtitle">リワードを獲得しました！</string>
+    <string name="gm__notification_instant_win_claim_button">今すぐ請求する</string>
+    <string name="gm__notification_instant_win_note"><![CDATA[This reward has been added to your <font color="#0096d6"><b>Redemptions</b></font>]]></string>
+    
+    <string name="gm__notification_badge_headline">おめでとうございます</string>
+    <string name="gm__notification_badge_subline">バッジ {name}をアンロックしました！</string>
+    <string name="gm__notification_badge_landscape_subline">You just got a badge!</string>
+    <string name="gm__notification_badge_landscape_name">{name} Badge</string>
+    
+    <string name="gm__notification_mayorship_subline">You just took mayorship at a venue!</string>
+    <string name="gm__notification_mayorship_name">You\'re now the Mayor at {name}</string>
+    
+    <string name="gm__notification_featured_reward_title">リワード特集</string>
+    <string name="gm__notification_featured_reward">{reward_name}で {reward_store}</string>
+    <string name="gm__notification_featured_reward_redeem">今すぐ獲得する</string>
+
+    <!-- Error messages -->
+    <string name="gm_error_409.5.6">Sorry, you have already redeemed this reward. Please go to your profile to claim it.</string>
+</resources>

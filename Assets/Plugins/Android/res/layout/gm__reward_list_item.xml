@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rewardItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <com.gimmie.components.SquareImageView
+        android:id="@+id/rewardImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter" />
+
+    <!-- Loading Image -->
+
+    <LinearLayout
+        android:id="@+id/imageLoadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/rewardImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gm__loading_background" >
+
+            <ProgressBar
+                android:id="@+id/imageLoadingProgress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/imageLoadingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageLoadingProgress"
+                android:layout_centerHorizontal="true"
+                android:text="@string/gm__loading"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/rewardFeaturedBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-8dp"
+        android:contentDescription="@string/gm__reward_featured_badge_description"
+        android:src="@drawable/gm__ic_featured_badge"
+        android:visibility="gone" />
+
+    <!-- Reward detail and price button -->
+    <!-- Add double layout for old android -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rewardImage"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AA000000"
+            android:padding="6dp" >
+
+            <TextView
+                android:id="@+id/rewardName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gm__loading"
+                android:textColor="@color/gm__reward_detail_text"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/shopName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rewardName"
+                android:text="@string/gm__loading"
+                android:textColor="@color/gm__reward_detail_text"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/rewardButton"
+                style="@style/Widget.Gimmie.Button.Reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/shopName"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/gm__rewards_button"
+                android:gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="@string/gm__loading"
+                android:textColor="@color/gm__reward_detail_text"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- Fully Redeemed overlay -->
+
+    <LinearLayout
+        android:id="@+id/specialOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/rewardImage"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#DD000000"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/specialTextBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <View
+                    android:id="@+id/topLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#AAFFFFFF" />
+
+                <TextView
+                    android:id="@+id/specialMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/topLine"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/gm__reward_fully_redeemed"
+                    android:textColor="@color/gm__reward_detail_text"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <View
+                    android:id="@+id/bottomLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/specialMessage"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#AAFFFFFF" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

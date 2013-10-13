@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="gm__title_text">#000000</color>
+    <color name="gm__action_bar_background">#1089b8</color>
+    <color name="gm__action_bar_text">#ffffff</color>
+    <color name="gm__background">#dedede</color>
+    <color name="gm__text">#000000</color>
+    <color name="gm__border">#f2f0f0</color>
+    
+    <color name="gm__empty_message">#7c7c7c</color>
+    
+    <color name="gm__loading_background">#ffffff</color>
+    
+    <color name="gm__error_button_pressed">#ffffff</color>
+    <color name="gm__error_button">#333333</color>
+    
+    <color name="gm__points_overlay_text_color">#ffffff</color>
+    <color name="gm__user_points_background">#f5f5f5</color>
+    
+    <color name="gm__reward_button">#f57e00</color>
+    <color name="gm__reward_pressed_button">#bc2827</color>
+    <color name="gm__reward_button_border">#ffffff</color>
+    <color name="gm__reward_button_border_bottom">#000000</color>
+    <color name="gm__reward_button_text">#ffffff</color>
+    
+    <color name="gm__reward_detail_text">#ffffff</color>
+    
+    <color name="gm__reward_sponsor_background">#ffffff</color>
+    <color name="gm__reward_sponsor_text">#000000</color>
+    
+    <color name="gm__claim_detail_background">#ffffff</color>
+    <color name="gm__claim_detail_reward_name">#000000</color>
+    <color name="gm__claim_detail_shop_name">#959595</color>
+    <color name="gm__claim_detail_expired">#e30000</color>
+    <color name="gm__claim_detail_redeemed">#959595</color>
+    <color name="gm__claim_detail_overlay">#AA000000</color>
+    
+    <color name="gm__detail_background">#ffffff</color>
+    <color name="gm__detail_border">#00b5e9</color>
+    <color name="gm__detail_claim_button_text">#ffffff</color>
+    
+    <color name="gm__history_row_background">#ffffff</color>
+    <color name="gm__history_loading_background">#ffffff</color>
+    <color name="gm__history_time">#9d9d9d</color>
+    
+    <color name="gm__profile_icon_background">#737373</color>
+    <color name="gm__profile_box_background">#ffffff</color>
+    <color name="gm__profile_counter_text">#ffffff</color>
+    
+    <color name="gm__leaderboard_background">#ffffff</color>
+    <color name="gm__leaderboard_name">#121212</color>
+    <color name="gm__leaderboard_points_topthree">#f47100</color>
+    <color name="gm__leaderboard_points">#787878</color>
+    <color name="gm__leaderboard_first_rank_color">#ffffff</color>
+    <color name="gm__leaderboard_rank_color">#33b5e5</color>
+    
+    <color name="gm__badge_header_background">#f6f6f6</color>
+    <color name="gm__badge_header_text">#000000</color>
+    <color name="gm__badge_border">#e8e6e6</color>
+    <color name="gm__badge_grid_background">#ffffff</color>
+    
+    <color name="gm__notification_background">#ffffff</color>
+    <color name="gm__notification_border">#33b5e5</color>
+    <color name="gm__notification_close">#ffffff</color>
+    
+    <color name="gm__notification_point_background">#09c</color>
+    <color name="gm__notification_point">#000000</color>
+    
+    <color name="gm__notification_featured_title">#ffffff</color>
+    <color name="gm__notification_featured_redeem">#000000</color>
+    <color name="gm__notification_featured_background">#e4e3e3</color>
+    
+    <color name="gm__notification_overlay">#AA000000</color>
+    
+    <color name="gm__notification_instant_win_background">#0096d6</color>
+    <color name="gm__notification_instant_win_border">#0096d6</color>
+    <color name="gm__notification_instant_win_header">#ffffff</color>
+    <color name="gm__notification_instant_win_detail_background">#ffffff</color>
+    <color name="gm__notification_instant_win_detail_text">#000000</color>
+    <color name="gm__notification_instant_win_button">#05adec</color>
+    <color name="gm__notification_instant_win_button_text">#ffffff</color>
+    
+    <color name="gm__notification_badge_background">#ffffff</color>
+    <color name="gm__notification_badge_border">#0096d6</color>
+    <color name="gm__notification_badge_header">#ffffff</color>
+    <color name="gm__notification_badge_header_background">#0096d6</color>
+    <color name="gm__notification_badge_subheader">#ffffff</color>
+    <color name="gm__notification_badge_detail">#000000</color>
+    <color name="gm__notification_badge_landscape_name">#000000</color>
+    
+    <color name="gm__notification_mayorship_name">#000000</color>
+    
+    <color name="gm__notification_ribbon_color1">#eb7925</color>
+    <color name="gm__notification_ribbon_color2">#f5e664</color>
+    <color name="gm__notification_ribbon_color3">#fd6666</color>
+    <color name="gm__notification_ribbon_color4">#7ac2fc</color>
+    <color name="gm__notification_ribbon_color5">#97e465</color>
+    
+</resources>

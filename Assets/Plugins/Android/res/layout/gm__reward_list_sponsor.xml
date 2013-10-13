@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/sponsorBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gm__reward_sponsor_background"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/sponsorHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/gm__reward_sponsor_header"
+            android:textColor="@color/gm__reward_sponsor_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sponsorSubhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sponsorHeader"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="@string/gm__reward_sponsor_subheader"
+            android:textColor="@color/gm__reward_sponsor_text"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gm__notification_overlay"
+    android:orientation="vertical"
+    android:paddingTop="26dp" >
+
+    <ImageButton
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:background="@null"
+        android:contentDescription="@string/gm__cancel"
+        android:src="@drawable/gm__ic_close" />
+
+    <RelativeLayout
+        android:id="@+id/notificationLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/gm__notification_badge_background"
+        android:padding="1dip" >
+
+        <RelativeLayout
+            android:id="@+id/notificationHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gm__notification_badge_header_background"
+            android:paddingBottom="4dip" >
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/gm__notification_badge_headline"
+                android:textColor="@color/gm__notification_badge_header"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/subheaderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/headerText"
+                android:gravity="center"
+                android:text="@string/gm__loading"
+                android:textColor="@color/gm__notification_badge_subheader"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <!-- Image and Loading -->
+
+        <RelativeLayout
+            android:id="@+id/imageBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notificationHeader"
+            android:paddingBottom="10dp" >
+
+            <LinearLayout
+                android:id="@+id/topDecorator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/gm__notification_ribbon_color1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/gm__notification_ribbon_color2" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/gm__notification_ribbon_color3" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/gm__notification_ribbon_color4" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/gm__notification_ribbon_color5" />
+            </LinearLayout>
+
+            <com.gimmie.components.SquareImageView
+                android:id="@+id/badgeImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topDecorator"
+                android:layout_margin="10dip"
+                android:scaleType="fitCenter" />
+
+            <RelativeLayout
+                android:id="@+id/badgeLoadingView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/badgeImage"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/topDecorator"
+                android:background="@color/gm__loading_background" >
+
+                <ProgressBar
+                    android:id="@+id/imageLoadingProgress"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/imageLoadingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageLoadingProgress"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/gm__loading"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- /Image and Loading -->
+
+        <TextView
+            android:id="@+id/badgeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageBlock"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="@string/gm__loading"
+            android:textColor="@color/gm__notification_badge_detail"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

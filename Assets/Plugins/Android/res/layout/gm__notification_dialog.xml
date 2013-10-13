@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingTop="30dp" >
+
+    <RelativeLayout
+        android:id="@+id/notificationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/featuredRewardBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pointNotificationBox"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="-7dip"
+            android:background="@android:color/white"
+            android:paddingBottom="2dp" >
+
+            <TextView
+                android:id="@+id/featuredTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/gm__notification_border"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:text="@string/gm__notification_featured_reward_title"
+                android:textColor="@color/gm__notification_featured_title"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <com.gimmie.components.SquareImageView
+                android:id="@+id/featuredRewardImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/featuredTitle"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="6dip"
+                android:layout_marginTop="2dp" />
+
+            <LinearLayout
+                android:id="@+id/notificationImageLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/featuredRewardImage"
+                android:layout_alignLeft="@id/featuredRewardImage"
+                android:layout_alignRight="@id/featuredRewardImage"
+                android:layout_alignTop="@id/featuredRewardImage" >
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/featuredRewardRedeem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/featuredRewardText"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@+id/featuredRewardNavigation"
+                android:layout_toRightOf="@id/featuredRewardImage"
+                android:gravity="center"
+                android:text="@string/gm__notification_featured_reward_redeem"
+                android:textColor="@color/gm__notification_featured_redeem"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/featuredRewardText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/featuredTitle"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@id/featuredRewardNavigation"
+                android:layout_toRightOf="@id/featuredRewardImage"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/gm__loading"
+                android:textColor="@color/gm__notification_featured_redeem"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/featuredRewardNavigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/featuredRewardText"
+                android:contentDescription="@string/gm__notification_navigation"
+                android:src="@drawable/gm__navigation_next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pointNotificationBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/gm__notification_background"
+            android:gravity="center"
+            android:paddingBottom="2dip"
+            android:paddingLeft="50dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dip" >
+
+            <ImageView
+                android:id="@+id/notificationImage"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_alignBottom="@+id/pointText"
+                android:layout_alignTop="@+id/pointText"
+                android:layout_marginLeft="4dip"
+                android:contentDescription="@string/gm__notification_points_image"
+                android:paddingRight="4dip"
+                android:src="@drawable/gm__alert_points" />
+
+            <TextView
+                android:id="@+id/pointText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/notificationImage"
+                android:gravity="center|fill_horizontal"
+                android:lines="2"
+                android:text="@string/gm__loading"
+                android:textColor="@color/gm__notification_point"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/featuredRewardBox"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/black"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gm__notification_close"
+                android:textColor="@color/gm__notification_close"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

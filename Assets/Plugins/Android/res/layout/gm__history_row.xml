@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Gimmie.History.Row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="0dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/actionMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/historyPointsType"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/gm__loading" />
+
+    <ImageView
+        android:id="@+id/historyPointsType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/gm__history_point_type"
+        android:src="@drawable/gm__alert_points" />
+
+    <TextView
+        android:id="@+id/actionTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/actionMessage"
+        android:layout_below="@+id/actionMessage"
+        android:paddingLeft="10dp"
+        android:text="@string/gm__loading"
+        android:textColor="@color/gm__history_time"
+        android:textSize="12sp" />
+
+</RelativeLayout>

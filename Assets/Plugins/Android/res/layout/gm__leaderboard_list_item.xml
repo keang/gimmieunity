@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp" >
+
+    <ImageView
+        android:id="@+id/firstThreePlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:contentDescription="@string/gm__leaderboard_first_three_player"
+        android:scaleType="center"
+        android:src="@drawable/gm__ic_leaderboard_icon" />
+
+    <TextView
+        android:id="@+id/playerRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/firstThreePlayer"
+        android:layout_alignLeft="@+id/firstThreePlayer"
+        android:layout_alignRight="@+id/firstThreePlayer"
+        android:layout_alignTop="@+id/firstThreePlayer"
+        android:gravity="center"
+        android:text="@string/gm__loading"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/playerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/playerPoints"
+        android:layout_toRightOf="@+id/firstThreePlayer"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/gm__loading"
+        android:textColor="@color/gm__leaderboard_name"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/playerPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/gm__loading"
+        android:textSize="14sp" />
+
+</RelativeLayout>

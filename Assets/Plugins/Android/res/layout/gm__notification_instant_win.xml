@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gm__notification_overlay"
+    android:orientation="vertical"
+    android:paddingTop="26dp" >
+
+    <ImageButton
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:background="@null"
+        android:contentDescription="@string/gm__cancel"
+        android:src="@drawable/gm__ic_close" />
+
+    <RelativeLayout
+        android:id="@+id/notificationLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:background="@drawable/gm__notification_instant_win_background"
+        android:padding="1dip" >
+
+        <RelativeLayout
+            android:id="@+id/notificationHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dip" >
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/gm__notification_instant_win_headline"
+                android:textColor="@color/gm__notification_instant_win_header"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/headerText"
+                android:gravity="center"
+                android:text="@string/gm__notification_instant_win_headline_subtitle"
+                android:textColor="@color/gm__notification_instant_win_header"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <!-- Image and Loading -->
+
+        <RelativeLayout
+            android:id="@+id/imageBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notificationHeader" >
+
+            <LinearLayout
+                android:id="@+id/topDecorator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/gm__notification_ribbon_color1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/gm__notification_ribbon_color2" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/gm__notification_ribbon_color3" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/gm__notification_ribbon_color4" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/gm__notification_ribbon_color5" />
+            </LinearLayout>
+
+            <com.gimmie.components.SquareImageView
+                android:id="@+id/rewardImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topDecorator"
+                android:scaleType="fitCenter" />
+
+            <RelativeLayout
+                android:id="@+id/imageLoadingView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/rewardImage"
+                android:layout_alignLeft="@+id/rewardImage"
+                android:layout_alignRight="@+id/rewardImage"
+                android:layout_alignTop="@+id/rewardImage"
+                android:background="@color/gm__loading_background" >
+
+                <ProgressBar
+                    android:id="@+id/imageLoadingProgress"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/imageLoadingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageLoadingProgress"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/gm__loading"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/bottomDecorator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rewardImage"
+                android:orientation="horizontal"
+                android:weightSum="5" >
+
+               <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/gm__notification_ribbon_color1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/gm__notification_ribbon_color2" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/gm__notification_ribbon_color3" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/gm__notification_ribbon_color4" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/gm__notification_ribbon_color5" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- /Image and Loading -->
+
+        <RelativeLayout
+            android:id="@+id/claimDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageBlock"
+            android:background="@color/gm__notification_instant_win_detail_background"
+            android:paddingBottom="4dp" >
+
+            <TextView
+                android:id="@+id/rewardName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/gm__loading"
+                android:textColor="@color/gm__notification_instant_win_detail_text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/rewardStoreName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rewardName"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:text="@string/gm__loading"
+                android:textColor="@color/gm__notification_instant_win_detail_text"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/claimButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rewardStoreName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/gm__btn_notification_claim"
+                android:gravity="center"
+                android:minHeight="24dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/gm__notification_instant_win_claim_button"
+                android:textColor="@color/gm__notification_instant_win_button_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/instantRewardNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/claimButton"
+                android:gravity="center"
+                android:text="@string/gm__loading"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

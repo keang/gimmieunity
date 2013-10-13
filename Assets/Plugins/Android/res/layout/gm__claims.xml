@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gm__background"
+    android:orientation="vertical"
+    android:paddingTop="10dp" >
+
+    <GridView
+        android:id="@+id/claimedGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:numColumns="1"
+        android:verticalSpacing="10dp" >
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/claimEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/emptyHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/gm__empty_claims_head"
+            android:textColor="@color/gm__empty_message"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emptySubline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emptyHeadline"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/gm__empty_claims_sub"
+            android:textColor="@color/gm__empty_message"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/emptyImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emptySubline"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/gm__empty_claims_image"
+            android:src="@drawable/gm__ic_empty_error" />
+    </RelativeLayout>
+
+</RelativeLayout>

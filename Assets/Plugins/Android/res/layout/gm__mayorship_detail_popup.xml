@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gm__notification_overlay"
+    android:orientation="vertical"
+    android:paddingTop="26dp" >
+
+    <RelativeLayout
+        android:id="@+id/popupWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/popupLayout"
+            android:background="@null"
+            android:contentDescription="@string/gm__cancel"
+            android:src="@drawable/gm__ic_close" />
+
+        <RelativeLayout
+            android:id="@+id/popupLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/closeButton"
+            android:layout_centerInParent="true"
+            android:background="@drawable/gm__notification_badge_background"
+            android:padding="1dp" >
+
+            <RelativeLayout
+                android:id="@+id/popupHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageBlock"
+                android:layout_alignRight="@+id/imageBlock"
+                android:background="@color/gm__notification_badge_header_background"
+                android:paddingBottom="4dip" >
+
+                <TextView
+                    android:id="@+id/mayorshipName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/gm__loading"
+                    android:textColor="@color/gm__notification_badge_header"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- Image and Loading -->
+
+            <RelativeLayout
+                android:id="@+id/imageBlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/popupHeader" >
+
+                <com.gimmie.components.SquareImageView
+                    android:id="@+id/mayorshipImage"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter" />
+
+                <RelativeLayout
+                    android:id="@+id/mayorshipLoadingView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/mayorshipImage"
+                    android:layout_alignLeft="@+id/mayorshipImage"
+                    android:layout_alignRight="@+id/mayorshipImage"
+                    android:layout_alignTop="@+id/mayorshipImage"
+                    android:background="@color/gm__loading_background" >
+
+                    <ProgressBar
+                        android:id="@+id/imageLoadingProgress"
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:id="@+id/imageLoadingText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageLoadingProgress"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/gm__loading"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- /Image and Loading -->
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

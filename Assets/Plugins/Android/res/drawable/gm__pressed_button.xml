@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gm__reward_button_border"/>
+            <padding android:top="1dp" android:left="1dp"/>
+        </shape>
+    </item>
+    
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gm__reward_button_border_bottom"/>
+            <padding android:bottom="1dp" android:right="1dp"/>
+        </shape>
+    </item>
+    
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gm__reward_pressed_button"/>
+        </shape>
+    </item>
+    
+</layer-list>
+

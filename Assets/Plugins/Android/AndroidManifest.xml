@@ -16,5 +16,46 @@
     <activity android:name="com.facebook.LoginActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
     </activity>
     <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="\ 220466901453630" />
+
+    <!-- Gimmie World -->
+        <activity android:name="com.gimmie.components.GimmieView"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/RewardCategoryPage" />
+        <activity
+            android:name="com.gimmie.components.RewardDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/GimmieAppeaerance" />
+        <activity
+            android:name="com.gimmie.components.BadgeView"
+            android:screenOrientation="portrait"
+            android:theme="@style/GimmieAppeaerance" />
+        <activity
+            android:name="com.gimmie.components.ClaimsList"
+            android:screenOrientation="portrait"
+            android:theme="@style/GimmieAppeaerance" />
+        <activity
+            android:name="com.gimmie.components.HistoryList"
+            android:screenOrientation="portrait"
+            android:theme="@style/GimmieAppeaerance" />
+        <activity
+            android:name="com.gimmie.components.WebView"
+            android:screenOrientation="portrait"
+            android:theme="@style/GimmieAppeaerance" />
+
+        <meta-data
+            android:name="com.gimmie.api.key"
+            android:value="b34fd591d29c3cbbc3482ac67311" />
+        <meta-data
+            android:name="com.gimmie.api.secret"
+            android:value="f25869e10ccbdc06fb74ea5e9161" />
+        <meta-data android:name="com.gimmie.notification.system.enable" android:value="false" />
+        <meta-data android:name="com.gimmie.notification.toast.enable" android:value="false" />
+        <meta-data android:name="com.gimmie.notification.popup.enable" android:value="true" />
+        <meta-data android:name="com.gimmie.notification.popup.duration" android:value="10" />
   </application>
+
+  <!-- Gimmie World -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 </manifest>
