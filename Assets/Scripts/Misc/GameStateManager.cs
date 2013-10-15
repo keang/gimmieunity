@@ -16,6 +16,7 @@ public class GameStateManager : MonoBehaviour {
 		get{
 			if(instance == null){
 				instance = new GameObject("GameStateManager").AddComponent<GameStateManager>();
+				GimmieBinding.initGimmie();
 				instance.startCounter();
 				Debug.Log("Started state manager!!!");
 			}

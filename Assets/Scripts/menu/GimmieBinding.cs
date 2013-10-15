@@ -24,13 +24,7 @@ public class GimmieBinding : MonoBehaviour {
 		GimmieRewards();
 	}
 	
-	void Awake(){
-		//pushes the button to corner.
-		guiTexture.pixelInset = new Rect(Screen.width/4f,
-			-Screen.width*2.4f/3f, 
-			Screen.width/4.7f, Screen.width/4.3f);
-		
-		
+	public static void initGimmie(){
 		// Binding Gimmie to Activity or View first.
 		AndroidJNI.AttachCurrentThread();
 		

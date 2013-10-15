@@ -62,8 +62,10 @@ public class SceneZen : MonoBehaviour {
 	}
 	
 	private void uploadZenTime(){
-		ParseObject zenTimeObject = new ParseObject("zenTime");
-		zenTimeObject["time"] = zenTime;
-		zenTimeObject.SaveAsync();
+		if( !Application.isEditor ){
+			ParseObject zenTimeObject = new ParseObject("zenTime");
+			zenTimeObject["time"] = zenTime;
+			zenTimeObject.SaveAsync();
+		}
 	}
 }

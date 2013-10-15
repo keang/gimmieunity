@@ -23,6 +23,8 @@ public class highscoreScene : MonoBehaviour {
 		if(GUI.Button(Util.buttonStandardSize, "Submit")){
 			//upload data to parse
 			uploadParse();	
+			//upload to gimmie;
+			GimmieBinding.GimmieTriggerEvent("breakhighscore");
 			//return to menuScene	
 			DontDestroyOnLoad(GameStateManager.Instance);
 			Application.LoadLevel("menu");

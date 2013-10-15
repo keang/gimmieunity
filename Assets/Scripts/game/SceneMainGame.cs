@@ -53,7 +53,16 @@ public class SceneMainGame : MonoBehaviour {
 	{
 		gameIsOver = true;
 		GameStateManager.Instance.lastScore = score;
-		if(score>highScore)
+		//submit scores to gimmie
+		if(score>4000) GimmieBinding.GimmieTriggerEvent("forty");
+		else if (score>3000) GimmieBinding.GimmieTriggerEvent("thirty");
+		else if (score>2000) GimmieBinding.GimmieTriggerEvent("twenty");
+		else if (score>1000) {
+			GimmieBinding.GimmieTriggerEvent("ten");
+			Debug.Log("Called gimmie ten");
+		}
+		
+		if(score>highScore && score>4000)
 		{
 			
 			//PlayerPrefs.SetString ("highscorer", GameStateManager.Instance.Username);

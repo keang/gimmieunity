@@ -37,27 +37,29 @@ public class SceneMenu : MonoBehaviour {
 			}
 			
 			//+1 button
-			if(GUI.Button(new Rect(Util.scaleScreen(30f),Screen.height/3 - Util.scaleScreen(50f)
-				+ Util.scaleScreen(50f),
-			Screen.width - Util.scaleScreen(60f),Util.scaleScreen(40f)), "+1 point")){
-				GimmieBinding.GimmieTriggerEvent("testevent");
-			}
+//			if(GUI.Button(new Rect(Util.scaleScreen(30f),Screen.height/3 - Util.scaleScreen(50f)
+//				+ Util.scaleScreen(50f),
+//			Screen.width - Util.scaleScreen(60f),Util.scaleScreen(40f)), "+1 point")){
+//				GimmieBinding.GimmieTriggerEvent("testevent");
+//			}
 			
 		}
 	}
 	
 	void startGame(){
 		DontDestroyOnLoad(GameStateManager.Instance);
-		if(GameStateManager.Instance.playCounter != null){
+		if(!Application.isEditor && GameStateManager.Instance.playCounter != null){
 			GameStateManager.Instance.playCounter++;	
 			GameStateManager.Instance.uploadPlayCount();
 		}
 		Application.LoadLevel("mainGame");
 	}
+	
 	void startZen(){
 		DontDestroyOnLoad(GameStateManager.Instance);
 		Application.LoadLevel("zenMode");
 	}
+	
 	// Update is called once per frame
 	void Update () {
 	//welcometext
